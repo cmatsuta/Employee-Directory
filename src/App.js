@@ -1,12 +1,15 @@
 import React, {Component} from 'react'
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import EmployeeCard from './components/EmployeeCard';
+import Wrapper from './components/Wrapper';
+import Col from './components/Col';
 import './App.css';
 import axios from "axios";
 
 class App extends Component {
   constructor(){
     super()
-    this.state = {testState: ""}
+    this.state = {userState: ""}
     // console.log("constructor");
   }
   componentDidMount(){
@@ -21,7 +24,10 @@ class App extends Component {
   // console.log("render")
   return (
     <div className="App">
-      test
+      <Col />
+      <Wrapper>
+        <EmployeeCard />
+      </Wrapper>
     </div>
   );
 }
