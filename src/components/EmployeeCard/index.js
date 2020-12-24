@@ -6,13 +6,13 @@ function EmployeeCard(props) {
     <thead>
       <tr>
         <th>
-          <img alt={props.firstName} src={props.picture} />
+          <img alt={props.user.name.first} src={props.user.picture.thumbnail} />
         </th>
-        <td>{props.firstName}</td>
-        <td>{props.lastName}</td>
-        <td>{props.email}</td>
-        <td>{props.phone}</td>
-        <td>{props.city}</td>
+        <td>{props.user.name.first}</td>
+        <td>{props.user.name.last}</td>
+        <td>{props.user.email}</td>
+        <td>{props.user.phone}</td>
+        <td>{props.user.location.city}</td>
       </tr>
     </thead>
   );
